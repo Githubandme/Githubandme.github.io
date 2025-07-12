@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>我的项目主页</title>
+  <style>
+    :root {
+      --bg: #f9fafb;
+      --sidebar: #ffffff;
+      --accent: #4f46e5;
+      --text: #111827;
+      --muted: #6b7280;
+      --shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      display: flex;
+      height: 100vh;
+    }
+    aside {
+      width: 240px;
+      background: var(--sidebar);
+      padding: 2rem 1rem;
+      box-shadow: var(--shadow);
+    }
+    aside h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+    aside ul {
+      list-style: none;
+      padding: 0;
+    }
+    aside li {
+      margin: 0.5rem 0;
+    }
+    aside a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    aside a:hover {
+      color: var(--accent);
+    }
+    main {
+      flex: 1;
+      padding: 2rem;
+      overflow-y: auto;
+    }
+    header {
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    p.lead {
+      color: var(--muted);
+      margin-top: 0.5rem;
+    }
+    section {
+      margin-top: 2rem;
+    }
+    section h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+    }
+    section p {
+      color: var(--muted);
+    }
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <aside>
+    <h2>📁 我的项目</h2>
+    <ul>
+      <li><a href="#pdf">PDF处理工具</a></li>
+      <li><a href="#stats">签收率统计系统</a></li>
+      <li><a href="#scale">称重系统</a></li>
+      <li><a href="#track">轨迹数据清洗</a></li>
+    </ul>
+  </aside>
+  <main>
+    <header>
+      <h1>你好，我是 Githubandme</h1>
+      <p class="lead">这是我的 GitHub 项目展示主页，欢迎访问和 star ⭐</p>
+      <p><a href="https://github.com/Githubandme" target="_blank">GitHub</a> ｜ <a href="mailto:your@email.com">Email</a></p>
+    </header>
+
+    <section id="pdf">
+      <h3>📦 PDF处理工具</h3>
+      <p>自动裁剪 PDF 空白、识别条码并重命名，适用于快递行业面单整理。</p>
+    </section>
+
+    <section id="stats">
+      <h3>📊 签收率统计系统</h3>
+      <p>根据轨迹数据自动生成签收率和异常报表，适配多渠道。</p>
+    </section>
+
+    <section id="scale">
+      <h3>⚖️ 称重系统</h3>
+      <p>通过串口读取电子秤数据并自动上传入仓接口，支持稳定跟踪。</p>
+    </section>
+
+    <section id="track">
+      <h3>🔍 轨迹数据清洗</h3>
+      <p>处理快递 API 返回的轨迹数据，过滤重复、统计时效等。</p>
+    </section>
+
+    <footer>
+      © 2025 Githubandme ｜ Powered by GitHub Pages
+    </footer>
+  </main>
+</body>
+</html>
